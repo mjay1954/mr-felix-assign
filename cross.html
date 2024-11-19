@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamnest Housing Agency</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header (Bootstrap) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold" href="#">DreamNest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Tailwind) -->
+  <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('images/futuristric-home.webp">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="container mx-auto h-full flex items-center justify-center">
+      <div class="relative z-10 text-center text-white px-6 max-w-xl">
+        <h1 class="text-5xl font-bold mb-4">Find Your Perfect Home</h1>
+        <p class="mb-6">Discover affordable, luxurious housing options with DreamNest.</p>
+        <a href="#features" class="px-8 py-4 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section (Either Framework) -->
+  <section id="features" class="py-16 bg-gray-50">
+    <div class="container">
+      <h2 class="text-center text-3xl font-bold mb-12">Why Choose Us</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="relative bg-cover bg-center h-64 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105" style="background-image: url('images/traditional\ home.webp');">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg">
+            <div class="text-center px-6">
+              <h5 class="text-xl font-bold text-white mb-2">Variety of Properties</h5>
+              <p class="text-white text-sm">Choose from a range of properties tailored to your needs.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="relative bg-cover bg-center h-64 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105"style="background-image: url('images/istockphoto-503044702-612x612.webp');">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg">
+            <div class="text-center px-6">
+              <h5 class="text-xl font-bold text-white mb-2">Prime Locations</h5>
+              <p class="text-white text-sm">Our listings include homes in the best neighborhoods.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="relative bg-cover bg-center h-64 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105" style="background-image: url('images/modern\ apartment.avif');">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg">
+            <div class="text-center px-6">
+              <h5 class="text-xl font-bold text-white mb-2">Trusted Agents</h5>
+              <p class="text-white text-sm">Work with top-rated professionals for a seamless experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonials Section (Bootstrap Carousel) -->
+<section id="testimonials" class="py-16 bg-white">
+  <div class="container">
+    <h2 class="text-center text-3xl font-bold mb-12">What Our Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="text-center">
+            <p class="lead">"DreamNest helped us find our forever home in no time!"</p>
+            <p class="fw-bold">- John & Sarah</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center">
+            <p class="lead">"Professional agents and a fantastic range of options. Highly recommend."</p>
+            <p class="fw-bold">- Lisa T.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous Button -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="visually-hidden">Previous</span>
+        <span class="text-primary fs-3 fw-bold">&laquo;</span>
+      </button>
+
+      <!-- Next Button -->
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="visually-hidden">Next</span>
+        <span class="text-primary fs-3 fw-bold">&raquo;</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer (Tailwind) -->
+  <footer id="contact" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h4 class="text-lg font-bold">DreamNest Housing Agency</h4>
+      <p>Contact us: <a href="mailto:info@dreamnest.com" class="text-blue-400">info@dreamnest.com</a></p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Instagram</a>
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+      </div>
+      <p class="mt-6">&copy; 2024 DreamNest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
